@@ -72,7 +72,7 @@ const Navigation = () => {
                   Chandan R
                 </span>
                 <span className="text-[10px] text-muted-foreground group-hover:text-accent transition-colors leading-none">
-                  AI Engineer
+                  Tuning AI to think indic tongues
                 </span>
               </div>
               
