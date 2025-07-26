@@ -43,43 +43,53 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Animated Profile Photo with Tagline */}
-          <div className={`transition-all duration-700 ease-out transform ${
+          <div className={`transition-all duration-1000 ease-out transform ${
             isInHero 
-              ? 'opacity-0 scale-0 translate-x-[-120px] translate-y-6 rotate-12' 
-              : 'opacity-100 scale-100 translate-x-0 translate-y-0 rotate-0'
+              ? 'opacity-0 scale-0 translate-x-[-150px] translate-y-8 rotate-45 blur-sm' 
+              : 'opacity-100 scale-100 translate-x-0 translate-y-0 rotate-0 blur-0'
           }`}>
             <button
               onClick={() => scrollToSection('hero')}
-              className="group relative overflow-hidden flex items-center gap-3 p-2 pr-4 rounded-2xl bg-gradient-to-r from-primary/8 to-accent/8 hover:from-primary/20 hover:to-accent/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-primary/15 hover:border-primary/40 backdrop-blur-md shadow-lg"
+              className="group relative overflow-hidden flex items-center gap-4 p-3 pr-5 rounded-3xl bg-gradient-to-r from-primary/10 to-accent/10 hover:from-primary/25 hover:to-accent/25 transition-all duration-700 hover:scale-110 hover:shadow-glow border border-primary/20 hover:border-primary/60 backdrop-blur-lg shadow-xl"
             >
-              <div className="relative">
+              {/* Rotating ring effect */}
+              <div className="absolute inset-0 rounded-3xl border-2 border-gradient-primary opacity-30 animate-spin"></div>
+              
+              <div className="relative group-hover:animate-pulse">
                 <img
                   src={profilePhoto}
                   alt="Profile"
-                  className="w-11 h-11 rounded-xl object-cover border-2 border-primary/40 group-hover:border-primary transition-all duration-500 group-hover:scale-110 shadow-md"
+                  className="w-12 h-12 rounded-2xl object-cover border-2 border-primary/50 group-hover:border-accent transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg"
                 />
-                {/* Animated ring */}
-                <div className="absolute inset-0 rounded-xl border-2 border-accent/25 animate-pulse"></div>
+                {/* Multiple animated rings */}
+                <div className="absolute inset-0 rounded-2xl border-2 border-accent/30 animate-ping"></div>
+                <div className="absolute inset-0 rounded-2xl border border-primary/40 animate-pulse delay-300"></div>
+                
+                {/* Floating particles */}
+                <div className="absolute -top-2 -right-2 w-2 h-2 bg-accent rounded-full opacity-70 animate-bounce delay-100"></div>
+                <div className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-primary rounded-full opacity-60 animate-bounce delay-300"></div>
+                
                 {/* Hover glow */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-                {/* Corner accent */}
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full opacity-60 animate-ping"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-30 transition-all duration-700 blur-sm"></div>
               </div>
               
-              {/* Tagline */}
-              <div className={`transition-all duration-700 delay-100 ${
-                isInHero ? 'opacity-0 translate-x-[-30px] scale-90' : 'opacity-100 translate-x-0 scale-100'
+              {/* Enhanced Tagline */}
+              <div className={`transition-all duration-1000 delay-200 ${
+                isInHero ? 'opacity-0 translate-x-[-40px] scale-75 rotate-6' : 'opacity-100 translate-x-0 scale-100 rotate-0'
               }`}>
-                <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-all duration-300 leading-tight whitespace-nowrap bg-gradient-to-r from-primary to-accent bg-clip-text group-hover:text-transparent">
+                <span className="text-sm font-bold text-foreground group-hover:text-transparent transition-all duration-500 leading-tight whitespace-nowrap bg-gradient-to-r from-primary via-accent to-primary bg-clip-text group-hover:bg-size-200 group-hover:animate-shimmer">
                   Tuning AI to think indic tongues
                 </span>
               </div>
               
-              {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+              {/* Enhanced hover effects */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/8 to-accent/8 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-3xl"></div>
               
-              {/* Subtle shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl"></div>
+              {/* Advanced shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 rounded-3xl"></div>
+              
+              {/* Pulsing border */}
+              <div className="absolute inset-0 rounded-3xl border border-accent/20 opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500"></div>
             </button>
           </div>
 
