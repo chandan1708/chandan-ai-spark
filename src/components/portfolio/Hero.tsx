@@ -39,12 +39,12 @@ const Hero = () => {
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in order-2 lg:order-2 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 lg:mb-8 leading-tight">
-              <span className="bg-gradient-primary bg-clip-text text-transparent whitespace-nowrap">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
                 CHANDAN RAMESH
               </span>
             </h1>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-accent mb-6 lg:mb-8 font-medium bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-accent mb-6 lg:mb-8 font-medium">
               Gen AI Engineer
             </h2>
             
