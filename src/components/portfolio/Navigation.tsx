@@ -56,7 +56,7 @@ const Navigation = () => {
                 <img
                   src={profilePhoto}
                   alt="Profile"
-                  className="w-12 h-12 rounded-xl object-cover transition-all duration-300 group-hover:scale-110"
+                  className="w-12 h-12 rounded-full object-cover transition-all duration-300 group-hover:scale-110"
                 />
               </div>
               
