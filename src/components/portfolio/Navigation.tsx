@@ -50,10 +50,11 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-primary transition-colors relative group"
+                className="text-muted-foreground hover:text-primary transition-colors relative group overflow-hidden"
               >
-                {item.label}
+                <span className="relative z-10">{item.label}</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer transition-opacity duration-500"></span>
               </button>
             ))}
           </div>
@@ -77,9 +78,10 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-muted-foreground hover:text-primary transition-colors py-2"
+                  className="text-left text-muted-foreground hover:text-primary transition-colors py-2 relative group overflow-hidden"
                 >
-                  {item.label}
+                  <span className="relative z-10">{item.label}</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer transition-opacity duration-500"></span>
                 </button>
               ))}
             </div>
