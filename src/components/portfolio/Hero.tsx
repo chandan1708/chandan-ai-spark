@@ -21,44 +21,43 @@ const Hero = () => {
       {/* Animated background overlay */}
       <div className="absolute inset-0 bg-gradient-glow opacity-30 animate-pulse"></div>
       
-      <div className="container mx-auto px-6 z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="container mx-auto px-4 sm:px-6 z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 lg:gap-12">
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-float">
+          <div className="flex-shrink-0 animate-float order-1 lg:order-1">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-30 scale-110"></div>
               <img
                 src={profilePhoto}
                 alt="Chandan R - AI & Data Science Engineer"
-                className="w-80 h-80 rounded-full object-cover border-4 border-primary shadow-glow relative z-10"
+                className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-primary shadow-glow relative z-10"
               />
             </div>
           </div>
 
           {/* Content */}
-          <div className="flex-1 text-center lg:text-left animate-fade-in">
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6">
+          <div className="flex-1 text-center lg:text-left animate-fade-in order-2 lg:order-2 max-w-2xl lg:max-w-none">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 CHANDAN RAMESH
               </span>
             </h1>
             
-            <h2 className="text-2xl lg:text-3xl text-accent mb-6 font-medium">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl text-accent mb-4 lg:mb-6 font-medium">
               Gen AI Engineer
             </h2>
             
-            <p className="text-lg text-accent/80 mb-2 font-medium italic">
+            <p className="text-base sm:text-lg text-accent/80 mb-6 lg:mb-8 font-medium italic">
               Tuning AI to think in Indic tongues.
             </p>
-            
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-6 lg:mb-8">
               <Button 
                 variant="hero" 
                 size="lg"
                 onClick={() => scrollToSection('projects')}
-                className="text-lg px-8 py-3"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 w-full sm:w-auto"
               >
                 View My Work
                 <ArrowDown className="ml-2 animate-bounce" />
@@ -68,14 +67,14 @@ const Hero = () => {
                 variant="outline" 
                 size="lg"
                 onClick={() => scrollToSection('contact')}
-                className="text-lg px-8 py-3 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                className="text-base sm:text-lg px-6 sm:px-8 py-3 w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
                 Get In Touch
               </Button>
             </div>
 
             {/* Social Links - Enhanced with Professional Hover Effects */}
-            <div className="flex justify-center lg:justify-start gap-4">
+            <div className="flex justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
               {[
                 { href: "https://linkedin.com/in/chandan-r-7a8bb8237", icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5]" },
                 { href: "https://github.com/chandan1708/chandan1708.github.io", icon: Github, label: "GitHub", color: "hover:bg-[#333]" },
