@@ -42,27 +42,42 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Animated Profile Photo */}
-          <div className={`transition-all duration-500 ease-in-out ${
+          {/* Animated Profile Photo with Tagline */}
+          <div className={`transition-all duration-700 ease-in-out transform ${
             isInHero 
-              ? 'opacity-0 scale-0 translate-y-4' 
-              : 'opacity-100 scale-100 translate-y-0'
+              ? 'opacity-0 scale-0 translate-x-[-100px] translate-y-4' 
+              : 'opacity-100 scale-100 translate-x-0 translate-y-0'
           }`}>
             <button
               onClick={() => scrollToSection('hero')}
-              className="group relative overflow-hidden p-1 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 hover:from-primary/30 hover:to-accent/30 transition-all duration-300 hover:scale-110 hover:shadow-glow"
+              className="group relative overflow-hidden flex items-center gap-3 px-3 py-2 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 transition-all duration-500 hover:scale-105 hover:shadow-glow border border-primary/20 hover:border-primary/40"
             >
               <div className="relative">
                 <img
                   src={profilePhoto}
                   alt="Chandan R"
-                  className="w-10 h-10 rounded-full object-cover border-2 border-primary/50 group-hover:border-primary transition-all duration-300"
+                  className="w-8 h-8 rounded-full object-cover border-2 border-primary/50 group-hover:border-primary transition-all duration-300"
                 />
                 {/* Animated ring */}
                 <div className="absolute inset-0 rounded-full border-2 border-accent/30 animate-pulse"></div>
                 {/* Hover glow */}
                 <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               </div>
+              
+              {/* Tagline */}
+              <div className={`flex flex-col transition-all duration-500 ${
+                isInHero ? 'opacity-0 translate-x-[-20px]' : 'opacity-100 translate-x-0'
+              }`}>
+                <span className="text-xs font-semibold text-foreground group-hover:text-primary transition-colors leading-none">
+                  Chandan R
+                </span>
+                <span className="text-[10px] text-muted-foreground group-hover:text-accent transition-colors leading-none">
+                  AI Engineer
+                </span>
+              </div>
+              
+              {/* Hover effect overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
             </button>
           </div>
 
