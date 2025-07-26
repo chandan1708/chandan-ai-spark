@@ -51,7 +51,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-up">
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-300">
+            <Card className="group p-8 bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant">
               <h3 className="text-2xl font-semibold mb-6 text-primary">Get In Touch</h3>
               
               <div className="space-y-6">
@@ -146,7 +146,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-300">
+            <Card className="group p-8 bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant">
               <h3 className="text-2xl font-semibold mb-6 text-primary">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">

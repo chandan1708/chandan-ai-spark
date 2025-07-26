@@ -73,29 +73,39 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className="overflow-hidden bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-500 group animate-slide-up"
+              className="group relative overflow-hidden bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="grid lg:grid-cols-5 gap-0">
-                {/* Project Image */}
+                {/* Project Image with Professional Hover Effects */}
                 <div className="lg:col-span-2 relative overflow-hidden">
                   <div className="aspect-video lg:aspect-square relative">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent lg:from-transparent lg:to-background/80"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/30 to-transparent lg:from-transparent lg:via-background/30 lg:to-background/90 opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                    
+                    {/* Elegant overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
                   </div>
                   
-                  {/* Status Badge */}
+                  {/* Status Badge with better styling */}
                   <div className="absolute top-4 left-4">
                     <Badge 
                       variant={project.status === "Completed" ? "secondary" : "default"}
-                      className="backdrop-blur-sm"
+                      className="bg-background/80 backdrop-blur-sm border border-border/30 font-medium"
                     >
                       {project.status}
                     </Badge>
+                  </div>
+                  
+                  {/* Hover indicator */}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div className="p-2 rounded-lg bg-background/80 backdrop-blur-sm border border-border/30">
+                      <ExternalLink className="w-4 h-4 text-primary" />
+                    </div>
                   </div>
                 </div>
 

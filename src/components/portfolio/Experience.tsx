@@ -66,7 +66,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card 
               key={index}
-              className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-500 animate-slide-up group"
+              className="group relative overflow-hidden p-8 bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Header */}

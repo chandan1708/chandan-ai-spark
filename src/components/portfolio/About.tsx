@@ -24,12 +24,12 @@ const About = () => {
           {/* Profile Overview */}
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {/* Personal Info Card */}
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-500 animate-slide-up">
+            <Card className="group p-8 bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant animate-fade-in">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <User className="w-6 h-6 text-primary" />
+                <div className="p-2.5 rounded-xl bg-background/80 backdrop-blur-sm border border-border/30 group-hover:scale-110 transition-all duration-300">
+                  <User className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-primary">Personal Info</h3>
+                <h3 className="text-xl font-semibold text-primary group-hover:text-primary-glow transition-colors">Personal Info</h3>
               </div>
               
               <div className="space-y-4">
@@ -60,12 +60,12 @@ const About = () => {
             </Card>
 
             {/* Philosophy Card */}
-            <Card className="lg:col-span-2 p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-500 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            <Card className="group lg:col-span-2 p-8 bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-lg bg-accent/10">
-                  <BookOpen className="w-6 h-6 text-accent" />
+                <div className="p-2.5 rounded-xl bg-background/80 backdrop-blur-sm border border-border/30 group-hover:scale-110 transition-all duration-300">
+                  <BookOpen className="w-5 h-5 text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold text-primary">Philosophy & Journey</h3>
+                <h3 className="text-xl font-semibold text-primary group-hover:text-primary-glow transition-colors">Philosophy & Journey</h3>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
@@ -95,12 +95,15 @@ const About = () => {
           </div>
 
           {/* Education Section */}
-          <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-500 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-2 rounded-lg bg-accent/10">
+          <Card className="group p-8 bg-card/30 backdrop-blur-sm border-border/30 hover:border-primary/20 transition-all duration-500 hover:shadow-elegant animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="p-3 rounded-xl bg-background/80 backdrop-blur-sm border border-border/30 group-hover:scale-110 transition-all duration-300">
                 <GraduationCap className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-semibold text-primary">Education</h3>
+              <div>
+                <h3 className="text-2xl font-semibold text-primary group-hover:text-primary-glow transition-colors">Education</h3>
+                <p className="text-sm text-muted-foreground mt-1">Academic foundation and continuous learning</p>
+              </div>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8">
