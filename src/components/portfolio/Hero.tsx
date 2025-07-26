@@ -39,17 +39,24 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left animate-fade-in">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                CHANDAN R
+                CHANDAN RAMESH
               </span>
             </h1>
             
             <h2 className="text-2xl lg:text-3xl text-accent mb-6 font-medium">
-              AI & Data Science Engineer
+              Gen AI Engineer
             </h2>
             
+            <p className="text-lg text-accent/80 mb-2 font-medium italic">
+              Tuning AI to think in Indic tongues.
+            </p>
+            
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              Passionate about leveraging artificial intelligence and machine learning to solve complex problems. 
-              Experienced in deep learning, computer vision, and building scalable AI systems that drive innovation.
+              Raised in Bengaluru, I found myself drawn to how machines understand language and more curiously, how they forget. In the drift between data and dialogue, I now work as a GenAI Engineer — not to teach machines to speak, but to listen with memory.
+              <br /><br />
+              My path has never been a straight line — it bent with curiosity, sparked with code, and still moves in rhythm with questions.
+              <br /><br />
+              This is not the destination. It's the becoming.
             </p>
 
             {/* CTA Buttons */}

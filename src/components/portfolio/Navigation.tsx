@@ -41,7 +41,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:scale-105 transition-transform"
           >
-            CHANDAN R
+            CHANDAN RAMESH
           </button>
 
           {/* Desktop Navigation */}

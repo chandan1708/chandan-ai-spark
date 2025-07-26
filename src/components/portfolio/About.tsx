@@ -13,8 +13,7 @@ const About = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A motivated and detail-oriented data scientist with a strong foundation in statistics, 
-            data manipulation, visualization, and model development.
+            Raised in Bengaluru, I found myself drawn to how machines understand language and more curiously, how they forget. In the drift between data and dialogue, I now work as a GenAI Engineer — not to teach machines to speak, but to listen with memory.
           </p>
         </div>
 
@@ -42,11 +41,9 @@ const About = () => {
               </div>
 
               <div className="mt-8">
-                <h4 className="font-semibold mb-4 text-accent">Objective</h4>
+                <h4 className="font-semibold mb-4 text-accent">Philosophy</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  Seeking to leverage technical and analytical skills to solve complex problems 
-                  and drive business insights in a data scientist role. Passionate about using 
-                  AI to create meaningful impact in real-world applications.
+                  My path has never been a straight line — it bent with curiosity, sparked with code, and still moves in rhythm with questions. This is not the destination. It's the becoming.
                 </p>
               </div>
             </Card>
@@ -69,15 +66,15 @@ const About = () => {
                   </div>
                   
                   <p className="text-sm text-muted-foreground mb-2">
-                    SDM Institute of Technology, Ujire
+                    Visvesvaraya Technological University
                   </p>
                   
                   <div className="flex items-center gap-4 mb-3">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-sm">Dec 2021 - Present</span>
+                      <span className="text-sm">Dec 2021 - May 2025</span>
                     </div>
-                    <Badge variant="secondary">CGPA: 7.84</Badge>
+                    <Badge variant="secondary">CGPA: 8.56</Badge>
                   </div>
                   
                   <p className="text-sm text-muted-foreground">
