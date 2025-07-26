@@ -121,5 +121,15 @@
 
   body {
     @apply bg-background text-foreground;
+    cursor: none; /* Hide default cursor for custom cursor effect */
+  }
+
+  /* Show default cursor on form elements for better UX */
+  input, textarea, select, button {
+    cursor: pointer;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    cursor: text;
   }
 }
