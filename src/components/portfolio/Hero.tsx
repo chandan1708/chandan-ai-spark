@@ -10,6 +10,7 @@ const Hero = () => {
 
   return (
     <section 
+      id="hero"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${techBg})`,
@@ -22,7 +23,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-glow opacity-30 animate-pulse"></div>
       
       <div className="container mx-auto px-4 sm:px-6 z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 min-h-screen pt-20 lg:pt-0">
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-float order-1 lg:order-1">
             <div className="relative">
@@ -30,24 +31,24 @@ const Hero = () => {
               <img
                 src={profilePhoto}
                 alt="Chandan R - AI & Data Science Engineer"
-                className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-primary shadow-glow relative z-10"
+                className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary shadow-glow relative z-10"
               />
             </div>
           </div>
 
           {/* Content */}
-          <div className="flex-1 text-center lg:text-left animate-fade-in order-2 lg:order-2 max-w-2xl lg:max-w-none">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
+          <div className="flex-1 text-center lg:text-left animate-fade-in order-2 lg:order-2 max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 lg:mb-8 leading-tight">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 CHANDAN RAMESH
               </span>
             </h1>
             
-            <h2 className="text-xl sm:text-2xl lg:text-3xl text-accent mb-4 lg:mb-6 font-medium">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-accent mb-6 lg:mb-8 font-medium">
               Gen AI Engineer
             </h2>
             
-            <p className="text-base sm:text-lg text-accent/80 mb-6 lg:mb-8 font-medium italic">
+            <p className="text-lg sm:text-xl lg:text-2xl text-accent/80 mb-8 lg:mb-10 font-medium italic leading-relaxed">
               Tuning AI to think in Indic tongues.
             </p>
 

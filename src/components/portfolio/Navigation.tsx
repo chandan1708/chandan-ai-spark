@@ -50,34 +50,36 @@ const Navigation = () => {
           }`}>
             <button
               onClick={() => scrollToSection('hero')}
-              className="group relative overflow-hidden flex items-center gap-2 p-1 pr-3 rounded-full bg-gradient-to-r from-primary/5 to-accent/5 hover:from-primary/15 hover:to-accent/15 transition-all duration-500 hover:scale-105 hover:shadow-lg border border-primary/10 hover:border-primary/30 backdrop-blur-sm"
+              className="group relative overflow-hidden flex items-center gap-3 p-2 pr-4 rounded-2xl bg-gradient-to-r from-primary/8 to-accent/8 hover:from-primary/20 hover:to-accent/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-primary/15 hover:border-primary/40 backdrop-blur-md shadow-lg"
             >
               <div className="relative">
                 <img
                   src={profilePhoto}
                   alt="Profile"
-                  className="w-7 h-7 rounded-full object-cover border border-primary/30 group-hover:border-primary transition-all duration-500 group-hover:scale-110"
+                  className="w-11 h-11 rounded-xl object-cover border-2 border-primary/40 group-hover:border-primary transition-all duration-500 group-hover:scale-110 shadow-md"
                 />
                 {/* Animated ring */}
-                <div className="absolute inset-0 rounded-full border border-accent/20 animate-pulse"></div>
+                <div className="absolute inset-0 rounded-xl border-2 border-accent/25 animate-pulse"></div>
                 {/* Hover glow */}
-                <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-15 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                {/* Corner accent */}
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full opacity-60 animate-ping"></div>
               </div>
               
               {/* Tagline */}
               <div className={`transition-all duration-700 delay-100 ${
                 isInHero ? 'opacity-0 translate-x-[-30px] scale-90' : 'opacity-100 translate-x-0 scale-100'
               }`}>
-                <span className="text-[11px] font-medium text-muted-foreground group-hover:text-primary transition-all duration-300 leading-tight whitespace-nowrap">
+                <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-all duration-300 leading-tight whitespace-nowrap bg-gradient-to-r from-primary to-accent bg-clip-text group-hover:text-transparent">
                   Tuning AI to think indic tongues
                 </span>
               </div>
               
               {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/3 to-accent/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
               
               {/* Subtle shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl"></div>
             </button>
           </div>
 
