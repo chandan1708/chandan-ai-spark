@@ -2,7 +2,9 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Calendar, TrendingUp } from "lucide-react";
-import aiConcept from "@/assets/ai-concept.jpg";
+import alpSurveillance from "@/assets/alp-surveillance.jpg";
+import accirescue from "@/assets/accirescue.jpg";
+import hospitalManagement from "@/assets/hospital-management.jpg";
 
 const Projects = () => {
   const projects = [
@@ -17,7 +19,7 @@ const Projects = () => {
         "Enhanced operational efficiency and behavior analysis"
       ],
       technologies: ["Computer Vision", "Deep Learning", "Real-time Processing", "Behavior Analysis"],
-      image: aiConcept,
+      image: alpSurveillance,
       status: "Completed",
       impact: "40% reduction in manual oversight"
     },
@@ -32,7 +34,7 @@ const Projects = () => {
         "Integrated YOLOv11 for accurate accident detection"
       ],
       technologies: ["YOLOv11", "Computer Vision", "Streamlit", "Real-time Data", "Emergency Systems"],
-      image: aiConcept,
+      image: accirescue,
       status: "In Progress",
       impact: "40% improvement in emergency response"
     },
@@ -47,7 +49,7 @@ const Projects = () => {
         "Implemented secure data handling with MySQL integration"
       ],
       technologies: ["Python", "CustomTkinter", "MySQL", "GUI Development", "Database Design"],
-      image: aiConcept,
+      image: hospitalManagement,
       status: "Completed",
       impact: "40% efficiency improvement"
     }

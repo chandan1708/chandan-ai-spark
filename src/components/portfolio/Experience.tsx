@@ -5,11 +5,25 @@ import { Building2, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Gen AI Engineer",
+      company: "WordWise Language Labs",
+      location: "Bengaluru, Karnataka",
+      period: "May 2025 - Present",
+      type: "Current",
+      achievements: [
+        "Building a platform that connects consumer brands with emerging markets across India's heartland through authentic, impactful content created by acclaimed regional writers",
+        "Unlocking access to information, commerce, and opportunity while driving inclusive growth and local empowerment",
+        "Developed advanced AI systems enhancing brand-consumer connections in regional markets",
+        "Implemented scalable content generation pipelines for multi-regional deployment"
+      ],
+      skills: ["LangGraph", "mem0", "Okta", "Agentic AI tools", "LangSmith", "OpenRouter", "Needle", "Python"]
+    },
+    {
       title: "Gen-AI Engineer Intern",
       company: "WordWise Language Labs",
       location: "Bengaluru, Karnataka",
-      period: "August 2024 - Present",
-      type: "Current",
+      period: "August 2024 - May 2025",
+      type: "Completed",
       achievements: [
         "Developed an inpainting model and hyperlocal language model, enhancing language processing capabilities by 30%",
         "Streamlined workflows using advanced language modeling, improving collaboration by 25% and overall efficiency by 40%",

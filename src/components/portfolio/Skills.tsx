@@ -13,7 +13,7 @@ const Skills = () => {
     {
       title: "Machine Learning & AI",
       icon: Brain,
-      skills: ["Supervised Learning", "Unsupervised Learning", "Deep Learning", "TensorFlow", "PyTorch", "NLP", "Model Evaluation", "LLM Techniques", "LoRA", "QLoRA", "RAG", "GraphRAG", "RAFT", "Prompt Engineering", "LangChain"],
+      skills: ["Supervised Learning", "Unsupervised Learning", "Deep Learning", "TensorFlow", "PyTorch", "NLP", "Model Evaluation", "LLM Techniques", "LoRA", "QLoRA", "RAG", "GraphRAG", "RAFT", "Prompt Engineering", "LangChain", "LangGraph", "mem0", "Agentic AI tools", "LangSmith", "OpenRouter", "Needle"],
       color: "text-accent"
     },
     {
@@ -25,7 +25,7 @@ const Skills = () => {
     {
       title: "Databases & Cloud",
       icon: Database,
-      skills: ["MySQL", "MongoDB", "AWS", "Database Design", "Cloud Computing"],
+      skills: ["MySQL", "MongoDB", "AWS", "Database Design", "Cloud Computing", "Okta"],
       color: "text-accent-glow"
     }
   ];
