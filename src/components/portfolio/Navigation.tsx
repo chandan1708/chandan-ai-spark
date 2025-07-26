@@ -43,41 +43,41 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Animated Profile Photo with Tagline */}
-          <div className={`transition-all duration-700 ease-in-out transform ${
+          <div className={`transition-all duration-700 ease-out transform ${
             isInHero 
-              ? 'opacity-0 scale-0 translate-x-[-100px] translate-y-4' 
-              : 'opacity-100 scale-100 translate-x-0 translate-y-0'
+              ? 'opacity-0 scale-0 translate-x-[-120px] translate-y-6 rotate-12' 
+              : 'opacity-100 scale-100 translate-x-0 translate-y-0 rotate-0'
           }`}>
             <button
               onClick={() => scrollToSection('hero')}
-              className="group relative overflow-hidden flex items-center gap-3 px-3 py-2 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 transition-all duration-500 hover:scale-105 hover:shadow-glow border border-primary/20 hover:border-primary/40"
+              className="group relative overflow-hidden flex items-center gap-2 p-1 pr-3 rounded-full bg-gradient-to-r from-primary/5 to-accent/5 hover:from-primary/15 hover:to-accent/15 transition-all duration-500 hover:scale-105 hover:shadow-lg border border-primary/10 hover:border-primary/30 backdrop-blur-sm"
             >
               <div className="relative">
                 <img
                   src={profilePhoto}
-                  alt="Chandan R"
-                  className="w-8 h-8 rounded-full object-cover border-2 border-primary/50 group-hover:border-primary transition-all duration-300"
+                  alt="Profile"
+                  className="w-7 h-7 rounded-full object-cover border border-primary/30 group-hover:border-primary transition-all duration-500 group-hover:scale-110"
                 />
                 {/* Animated ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-accent/30 animate-pulse"></div>
+                <div className="absolute inset-0 rounded-full border border-accent/20 animate-pulse"></div>
                 {/* Hover glow */}
-                <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-15 transition-opacity duration-500"></div>
               </div>
               
               {/* Tagline */}
-              <div className={`flex flex-col transition-all duration-500 ${
-                isInHero ? 'opacity-0 translate-x-[-20px]' : 'opacity-100 translate-x-0'
+              <div className={`transition-all duration-700 delay-100 ${
+                isInHero ? 'opacity-0 translate-x-[-30px] scale-90' : 'opacity-100 translate-x-0 scale-100'
               }`}>
-                <span className="text-xs font-semibold text-foreground group-hover:text-primary transition-colors leading-none">
-                  Chandan R
-                </span>
-                <span className="text-[10px] text-muted-foreground group-hover:text-accent transition-colors leading-none">
+                <span className="text-[11px] font-medium text-muted-foreground group-hover:text-primary transition-all duration-300 leading-tight whitespace-nowrap">
                   Tuning AI to think indic tongues
                 </span>
               </div>
               
               {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/3 to-accent/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
+              
+              {/* Subtle shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-full"></div>
             </button>
           </div>
 
