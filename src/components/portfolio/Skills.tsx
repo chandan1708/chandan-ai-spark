@@ -5,10 +5,12 @@ import {
   Brain, 
   Database, 
   BarChart3, 
+  Cpu, 
   Shield, 
   Award,
   Sparkles,
-  ChevronRight
+  Layers,
+  Zap
 } from "lucide-react";
 
 const Skills = () => {
@@ -16,10 +18,10 @@ const Skills = () => {
     {
       title: "Programming & Analysis",
       icon: Code,
-      skills: ["C", "C++", "Java", "Python", "Data Cleaning", "Data Manipulation", "Exploratory Data Analysis"],
-      color: "text-blue-400",
-      bgColor: "bg-blue-50 dark:bg-blue-950/20",
-      borderColor: "border-blue-200 dark:border-blue-800/30"
+      skills: ["C", "C++", "Java", "Python", "Data Cleaning", "Data Manipulation", "Exploratory Data Analysis (EDA)"],
+      color: "text-primary",
+      bgColor: "bg-primary/10",
+      borderColor: "border-primary/20"
     },
     {
       title: "Machine Learning & AI",
@@ -27,21 +29,12 @@ const Skills = () => {
       skills: [
         "Supervised & Unsupervised Learning", 
         "Deep Learning (TensorFlow, PyTorch)", 
-        "Natural Language Processing", 
+        "Natural Language Processing (NLP)", 
         "Model Evaluation", 
         "LLM Techniques (LoRA, QLoRA)", 
         "Graph-Based Approaches", 
         "RAG, GraphRAG, RAFT", 
-        "Prompt Engineering"
-      ],
-      color: "text-purple-400",
-      bgColor: "bg-purple-50 dark:bg-purple-950/20",
-      borderColor: "border-purple-200 dark:border-purple-800/30"
-    },
-    {
-      title: "Agentic AI Tools",
-      icon: Sparkles,
-      skills: [
+        "Prompt Engineering", 
         "LangChain", 
         "mem0", 
         "LangGraph", 
@@ -49,163 +42,183 @@ const Skills = () => {
         "OpenRouter", 
         "Needle"
       ],
-      color: "text-emerald-400",
-      bgColor: "bg-emerald-50 dark:bg-emerald-950/20",
-      borderColor: "border-emerald-200 dark:border-emerald-800/30"
+      color: "text-accent",
+      bgColor: "bg-accent/10",
+      borderColor: "border-accent/20"
     },
     {
-      title: "Generative Engine Optimization",
+      title: "Generative Engine Optimization (GEO)",
       icon: Sparkles,
       skills: [
-        "Model Output Optimization", 
-        "Prompt Refinement", 
-        "Response Ranking", 
-        "Task-specific Tuning", 
-        "Cross-modal Coherence"
+        "Optimization strategies for generative model outputs", 
+        "Prompt refinement", 
+        "Response ranking", 
+        "Retrieval-augmented generation (RAG)", 
+        "Task-specific tuning", 
+        "Generative relevance enhancement", 
+        "Cross-modal coherence optimization"
       ],
-      color: "text-amber-400",
-      bgColor: "bg-amber-50 dark:bg-amber-950/20",
-      borderColor: "border-amber-200 dark:border-amber-800/30"
+      color: "text-primary-glow",
+      bgColor: "bg-primary/5",
+      borderColor: "border-primary/30"
     },
     {
-      title: "Data & Visualization",
+      title: "Big Data & Visualization",
       icon: BarChart3,
       skills: ["Apache Spark", "Matplotlib", "Seaborn", "Power BI"],
-      color: "text-cyan-400",
-      bgColor: "bg-cyan-50 dark:bg-cyan-950/20",
-      borderColor: "border-cyan-200 dark:border-cyan-800/30"
+      color: "text-accent-glow",
+      bgColor: "bg-accent/5",
+      borderColor: "border-accent/30"
     },
     {
       title: "Databases & Cloud",
       icon: Database,
       skills: ["MySQL", "MongoDB", "AWS"],
-      color: "text-orange-400",
-      bgColor: "bg-orange-50 dark:bg-orange-950/20",
-      borderColor: "border-orange-200 dark:border-orange-800/30"
+      color: "text-primary",
+      bgColor: "bg-primary/10",
+      borderColor: "border-primary/20"
     },
     {
-      title: "Security & Identity",
+      title: "Security & Identity Management",
       icon: Shield,
       skills: ["Okta"],
-      color: "text-red-400",
-      bgColor: "bg-red-50 dark:bg-red-950/20",
-      borderColor: "border-red-200 dark:border-red-800/30"
+      color: "text-accent",
+      bgColor: "bg-accent/10",
+      borderColor: "border-accent/20"
     }
   ];
 
   const certifications = [
-    "IISC QuRP Workshop",
-    "Python for Data Science",
-    "Design and Analysis of Algorithm",
-    "Discrete Mathematics",
-    "DevPalooza by NVIDIA"
+    { name: "IISC QuRP Workshop", category: "Research" },
+    { name: "Python for Data Science", category: "Programming" },
+    { name: "Design and Analysis of Algorithm", category: "Computer Science" },
+    { name: "Discrete Mathematics", category: "Mathematics" },
+    { name: "DevPalooza by NVIDIA", category: "AI/ML" }
   ];
 
   return (
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        {/* Header */}
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Technical Skills
             </span>
           </h2>
-          <div className="w-16 h-1 bg-gradient-primary mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Expertise across AI, data science, and modern development technologies
+          <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8 rounded-full"></div>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Comprehensive expertise across the full spectrum of AI and data science technologies
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
             {skillCategories.map((category, index) => (
               <Card 
                 key={category.title}
-                className={`group relative overflow-hidden bg-card/50 backdrop-blur-sm ${category.borderColor} hover:shadow-lg transition-all duration-300 animate-slide-up`}
+                className={`p-6 bg-card/50 backdrop-blur-sm ${category.borderColor} hover:shadow-glow transition-all duration-500 group animate-slide-up hover:scale-105`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Header */}
-                <div className={`p-6 ${category.bgColor} border-b ${category.borderColor}`}>
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-white/80 dark:bg-black/20">
-                      <category.icon className={`w-5 h-5 ${category.color}`} />
-                    </div>
-                    <h3 className="font-semibold text-foreground">{category.title}</h3>
+                {/* Category Header */}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className={`p-3 rounded-lg ${category.bgColor} group-hover:scale-110 transition-all duration-300`}>
+                    <category.icon className={`w-6 h-6 ${category.color}`} />
                   </div>
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {category.title}
+                  </h3>
                 </div>
 
-                {/* Skills List */}
-                <div className="p-6">
-                  <div className="space-y-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div 
-                        key={skill}
-                        className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group/skill"
-                      >
-                        <ChevronRight className="w-3 h-3 opacity-60 group-hover/skill:opacity-100 transition-opacity" />
-                        <span>{skill}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  {/* Skill Count */}
-                  <div className="mt-4 pt-4 border-t border-border">
-                    <span className="text-xs text-muted-foreground">
-                      {category.skills.length} technologies
-                    </span>
-                  </div>
+                {/* Skills */}
+                <div className="space-y-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div 
+                      key={skill}
+                      className="flex items-center gap-2 p-2 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-200 group/skill"
+                      style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
+                    >
+                      <div className="w-2 h-2 rounded-full bg-gradient-primary group-hover/skill:scale-125 transition-transform"></div>
+                      <span className="text-sm text-muted-foreground group-hover/skill:text-foreground transition-colors">
+                        {skill}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Skill Count Badge */}
+                <div className="mt-4 flex justify-end">
+                  <Badge 
+                    variant="outline" 
+                    className={`${category.borderColor} ${category.color} text-xs`}
+                  >
+                    {category.skills.length} skills
+                  </Badge>
                 </div>
               </Card>
             ))}
           </div>
 
-          {/* Certifications */}
-          <Card className="bg-card/50 backdrop-blur-sm border-primary/20 animate-slide-up" style={{ animationDelay: '0.7s' }}>
-            <div className="p-6 border-b border-border bg-primary/5">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Award className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-primary">Certifications & Training</h3>
+          {/* Certifications Section */}
+          <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 hover:shadow-glow transition-all duration-500 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+            <div className="flex items-center gap-3 mb-8">
+              <div className="p-3 rounded-lg bg-accent/10">
+                <Award className="w-6 h-6 text-accent" />
               </div>
+              <h3 className="text-2xl font-semibold text-primary">Certifications & Training</h3>
             </div>
             
-            <div className="p-6">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {certifications.map((cert, index) => (
-                  <div 
-                    key={cert}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
-                  >
-                    <div className="w-2 h-2 rounded-full bg-primary"></div>
-                    <span className="text-sm text-muted-foreground">{cert}</span>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {certifications.map((cert, index) => (
+                <div 
+                  key={cert.name}
+                  className="p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 group border border-transparent hover:border-primary/20"
+                  style={{ animationDelay: `${0.7 + (index * 0.1)}s` }}
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="p-1.5 rounded bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <Zap className="w-4 h-4 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors text-sm">
+                        {cert.name}
+                      </h4>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        {cert.category}
+                      </p>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </Card>
 
-          {/* Stats */}
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
-            <div className="p-4">
-              <div className="text-2xl font-bold text-primary mb-1">
-                {skillCategories.reduce((total, category) => total + category.skills.length, 0)}+
+          {/* Skills Summary */}
+          <div className="mt-12 text-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="p-4">
+                <div className="text-3xl font-bold text-primary mb-2">
+                  {skillCategories.reduce((total, category) => total + category.skills.length, 0)}+
+                </div>
+                <p className="text-sm text-muted-foreground">Technical Skills</p>
               </div>
-              <p className="text-sm text-muted-foreground">Technologies</p>
-            </div>
-            <div className="p-4">
-              <div className="text-2xl font-bold text-primary mb-1">{skillCategories.length}</div>
-              <p className="text-sm text-muted-foreground">Domains</p>
-            </div>
-            <div className="p-4">
-              <div className="text-2xl font-bold text-primary mb-1">{certifications.length}</div>
-              <p className="text-sm text-muted-foreground">Certifications</p>
-            </div>
-            <div className="p-4">
-              <div className="text-2xl font-bold text-primary mb-1">3+</div>
-              <p className="text-sm text-muted-foreground">Years Experience</p>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-accent mb-2">
+                  {skillCategories.length}
+                </div>
+                <p className="text-sm text-muted-foreground">Skill Categories</p>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-primary mb-2">
+                  {certifications.length}
+                </div>
+                <p className="text-sm text-muted-foreground">Certifications</p>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-accent mb-2">3+</div>
+                <p className="text-sm text-muted-foreground">Years Experience</p>
+              </div>
             </div>
           </div>
         </div>
