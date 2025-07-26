@@ -154,12 +154,18 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex flex-wrap gap-3">
-                    <Button variant="glow" size="sm">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Details
-                    </Button>
-                    
-                    <Button variant="outline" size="sm">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      onClick={() => {
+                        const githubUrls = {
+                          "ALP Intelligence Surveillance": "https://github.com/chandan1708/ALP-Intelligence-Surveillance",
+                          "ACCIRESCUE": "https://github.com/chandan1708/ACCIRESCUE",
+                          "Hospital Management System": "https://github.com/chandan1708/Hospital-Management-System"
+                        };
+                        window.open(githubUrls[project.title as keyof typeof githubUrls], '_blank');
+                      }}
+                    >
                       <Github className="w-4 h-4 mr-2" />
                       Source Code
                     </Button>

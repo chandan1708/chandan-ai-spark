@@ -51,13 +51,6 @@ const Hero = () => {
               Tuning AI to think in Indic tongues.
             </p>
             
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              Raised in Bengaluru, I found myself drawn to how machines understand language and more curiously, how they forget. In the drift between data and dialogue, I now work as a GenAI Engineer — not to teach machines to speak, but to listen with memory.
-              <br /><br />
-              My path has never been a straight line — it bent with curiosity, sparked with code, and still moves in rhythm with questions.
-              <br /><br />
-              This is not the destination. It's the becoming.
-            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -99,6 +92,28 @@ const Hero = () => {
                 className="p-3 bg-secondary rounded-full hover:bg-primary hover:shadow-glow transition-all duration-300 group"
               >
                 <Github className="w-6 h-6 group-hover:text-primary-foreground" />
+              </a>
+              
+              <a
+                href="https://medium.com/@chandan17.ramesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-secondary rounded-full hover:bg-primary hover:shadow-glow transition-all duration-300 group"
+              >
+                <svg className="w-6 h-6 group-hover:text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                </svg>
+              </a>
+              
+              <a
+                href="https://medial.app/user/chandan-ramesh-1d3eecebcf8a5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-secondary rounded-full hover:bg-primary hover:shadow-glow transition-all duration-300 group"
+              >
+                <svg className="w-6 h-6 group-hover:text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
               </a>
               
               <a

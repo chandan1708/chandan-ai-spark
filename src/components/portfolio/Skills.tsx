@@ -7,26 +7,38 @@ const Skills = () => {
     {
       title: "Programming & Analysis",
       icon: Code,
-      skills: ["Python", "C", "C++", "Java", "Data Cleaning", "Data Manipulation", "Exploratory Data Analysis (EDA)"],
+      skills: ["C", "C++", "Java", "Python", "Data Cleaning", "Data Manipulation", "Exploratory Data Analysis (EDA)"],
       color: "text-primary"
     },
     {
       title: "Machine Learning & AI",
       icon: Brain,
-      skills: ["Supervised Learning", "Unsupervised Learning", "Deep Learning", "TensorFlow", "PyTorch", "NLP", "Model Evaluation", "LLM Techniques", "LoRA", "QLoRA", "RAG", "GraphRAG", "RAFT", "Prompt Engineering", "LangChain", "LangGraph", "mem0", "Agentic AI tools", "LangSmith", "OpenRouter", "Needle"],
+      skills: ["Supervised & Unsupervised Learning", "Deep Learning (TensorFlow, PyTorch)", "Natural Language Processing (NLP)", "Model Evaluation", "LLM Techniques (LoRA, QLoRA, Graph-Based Approaches, RAG, GraphRAG, RAFT)", "Prompt Engineering", "LangChain and Agentic AI Tools (mem0, LangGraph, LangSmith, OpenRouter, Needle)"],
       color: "text-accent"
+    },
+    {
+      title: "Generative Engine Optimization (GEO)",
+      icon: Brain,
+      skills: ["Optimization strategies for generative model outputs", "Prompt refinement", "Response ranking", "Retrieval-augmented generation (RAG)", "Task-specific tuning to enhance generative relevance and coherence across modalities"],
+      color: "text-primary-glow"
     },
     {
       title: "Big Data & Visualization",
       icon: BarChart3,
-      skills: ["Apache Spark", "Matplotlib", "Seaborn", "Power BI", "Data Visualization", "Statistical Analysis"],
-      color: "text-primary-glow"
+      skills: ["Apache Spark", "Matplotlib", "Seaborn", "Power BI"],
+      color: "text-accent-glow"
     },
     {
       title: "Databases & Cloud",
       icon: Database,
-      skills: ["MySQL", "MongoDB", "AWS", "Database Design", "Cloud Computing", "Okta"],
-      color: "text-accent-glow"
+      skills: ["MySQL", "MongoDB", "AWS"],
+      color: "text-primary"
+    },
+    {
+      title: "Security & Identity Management",
+      icon: Database,
+      skills: ["Okta"],
+      color: "text-accent"
     }
   ];
 
