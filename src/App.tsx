@@ -15,7 +15,7 @@ const App = () => (
       <CursorFollower />
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/chandan-ai-spark">
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
