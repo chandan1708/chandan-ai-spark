@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, MapPin, Calendar, Mail, Phone, User, BookOpen, Award } from "lucide-react";
+import { GraduationCap, MapPin, Calendar, Mail, User, BookOpen, Award } from "lucide-react";
 
 const About = () => {
   return (
@@ -38,14 +38,6 @@ const About = () => {
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
                     <p className="font-medium">Bengaluru, Karnataka, India</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
-                  <Phone className="w-5 h-5 text-accent" />
-                  <div>
-                    <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">+91 7996484276</p>
                   </div>
                 </div>
                 

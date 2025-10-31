@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -66,21 +66,6 @@ const Contact = () => {
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       chandan17.ramesh@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4 group">
-                  <div className="p-3 bg-secondary rounded-lg group-hover:bg-primary transition-colors duration-300">
-                    <Phone className="w-5 h-5 text-primary group-hover:text-primary-foreground" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <a 
-                      href="tel:+917996484276"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      +91 7996484276
                     </a>
                   </div>
                 </div>
