@@ -28,10 +28,12 @@ const Contact = () => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
+      // Fallback: Open mailto link if EmailJS is not configured
+      const mailtoLink = `mailto:chandan17.ramesh@gmail.com?subject=${encodeURIComponent(formData.subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+      window.location.href = mailtoLink;
       toast({
-        title: "Configuration Error",
-        description: "Email service is not configured. Please contact the site administrator.",
-        variant: "destructive",
+        title: "Opening Email Client",
+        description: "Please send your message via your email client. Email: chandan17.ramesh@gmail.com",
       });
       setIsSubmitting(false);
       return;
