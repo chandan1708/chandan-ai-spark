@@ -16,82 +16,70 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "AI & Machine Learning",
-      icon: Brain,
+      title: "Programming and Analysis",
+      icon: Code,
       skills: [
-        "Deep Learning (TensorFlow, PyTorch)",
-        "Natural Language Processing",
-        "Large Language Models",
-        "Computer Vision",
-        "Reinforcement Learning"
+        "C/C++",
+        "Java",
+        "Python",
+        "Data Cleaning",
+        "Data Manipulation",
+        "Exploratory Data Analysis (EDA)"
       ],
       color: "text-primary",
       gradient: "from-primary/20 to-primary/5"
     },
     {
-      title: "Generative AI Platforms",
-      icon: Sparkles,
+      title: "Deep Learning",
+      icon: Brain,
       skills: [
-        "LangChain & LangGraph",
-        "RAG & GraphRAG Systems",
-        "Prompt Engineering",
-        "OpenAI & Claude APIs",
-        "Vector Databases"
+        "CNN, ANN, RNN Architectures",
+        "TensorFlow/Keras",
+        "PyTorch",
+        "Transformer Models"
       ],
       color: "text-accent",
       gradient: "from-accent/20 to-accent/5"
     },
     {
-      title: "Programming Languages",
-      icon: Code,
+      title: "LLM and AI Agents",
+      icon: Sparkles,
       skills: [
-        "Python", 
-        "Java", 
-        "C/C++",
-        "JavaScript/TypeScript",
-        "SQL"
+        "Fine-Tuning (LoRA, QLoRA)",
+        "Prompt Engineering (Zero-shot, Few-shot, COT)",
+        "RAG Techniques (GraphRAG, RAFT, CAG)",
+        "LangChain Framework",
+        "LangGraph AI Agents",
+        "Evaluation (BLEU)"
       ],
       color: "text-primary-glow",
       gradient: "from-primary-glow/20 to-primary-glow/5"
     },
     {
-      title: "Data Science & Analytics",
-      icon: BarChart3,
+      title: "Vector Databases & API Development",
+      icon: Database,
       skills: [
-        "Data Analysis & Visualization",
-        "Statistical Modeling", 
-        "Apache Spark",
-        "Power BI & Tableau",
-        "Jupyter Notebooks"
+        "Datastax Astra DB",
+        "Chroma DB",
+        "MongoDB Atlas",
+        "Fast API",
+        "Django REST Framework (DRF)"
       ],
       color: "text-accent-glow",
       gradient: "from-accent-glow/20 to-accent-glow/5"
     },
     {
-      title: "Cloud & Infrastructure",
-      icon: Database,
+      title: "Databases and Cloud",
+      icon: Cpu,
       skills: [
-        "AWS Cloud Services",
-        "Docker & Kubernetes",
-        "MongoDB & MySQL",
-        "Redis & Vector DBs",
-        "CI/CD Pipelines"
+        "MySQL",
+        "MongoDB",
+        "AWS EC2",
+        "AWS Bedrock",
+        "AWS SageMaker"
       ],
       color: "text-primary",
       gradient: "from-primary/20 to-primary/5"
-    },
-    {
-      title: "Development Tools",
-      icon: Layers,
-      skills: [
-        "Git & GitHub",
-        "VS Code & PyCharm",
-        "REST APIs",
-        "Agile Methodologies",
-        "Testing Frameworks"
-      ],
-      color: "text-accent",
-      gradient: "from-accent/20 to-accent/5"
     }
   ];
 
