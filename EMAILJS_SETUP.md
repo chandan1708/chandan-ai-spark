@@ -2,6 +2,10 @@
 
 To receive emails when users submit the contact form, you need to set up EmailJS.
 
+## Quick Setup (5 minutes)
+
+**You're seeing the error because EmailJS is not configured yet. Follow these steps:**
+
 ## Steps to Configure EmailJS
 
 1. **Sign up for EmailJS** (free tier available)
@@ -34,21 +38,25 @@ To receive emails when users submit the contact form, you need to set up EmailJS
    - Go to "Account" > "General"
    - Copy your **Public Key**
 
-5. **Create a `.env` file** in the project root:
+5. **For Local Development - Create a `.env` file** in the project root:
+   ```bash
+   # In the project root directory
+   cp .env.example .env
+   ```
+   Then edit `.env` and replace the placeholder values with your actual EmailJS credentials:
    ```env
-   VITE_EMAILJS_SERVICE_ID=your_service_id_here
-   VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
-   VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
+   VITE_EMAILJS_SERVICE_ID=service_xxxxxxx
+   VITE_EMAILJS_TEMPLATE_ID=template_xxxxxxx
+   VITE_EMAILJS_PUBLIC_KEY=xxxxxxxxxxxxxxx
    ```
 
-6. **For GitHub Pages deployment**, add these as GitHub Secrets:
-   - Go to your GitHub repository
-   - Settings > Secrets and variables > Actions
-   - Add these secrets:
-     - `VITE_EMAILJS_SERVICE_ID`
-     - `VITE_EMAILJS_TEMPLATE_ID`
-     - `VITE_EMAILJS_PUBLIC_KEY`
-   - Update the GitHub Actions workflow to use these secrets in the build step
+6. **For GitHub Pages Deployment - Add GitHub Secrets**:
+   - Go to: https://github.com/chandan1708/chandan-ai-spark/settings/secrets/actions
+   - Click "New repository secret" for each:
+     - Name: `VITE_EMAILJS_SERVICE_ID`, Value: your Service ID
+     - Name: `VITE_EMAILJS_TEMPLATE_ID`, Value: your Template ID  
+     - Name: `VITE_EMAILJS_PUBLIC_KEY`, Value: your Public Key
+   - After adding secrets, push a new commit to trigger a rebuild (or manually trigger the workflow)
 
 ## Testing
 
