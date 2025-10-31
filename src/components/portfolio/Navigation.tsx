@@ -65,7 +65,7 @@ const Navigation = () => {
                 isInHero ? 'opacity-0' : 'opacity-100'
               }`}>
                 <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight whitespace-nowrap">
-                  Tuning AI to think indic tongues
+                  Tuning AI to think in Indic tongues
                 </span>
               </div>
             </button>
