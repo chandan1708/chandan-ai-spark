@@ -6,57 +6,57 @@
 
 @layer base {
   :root {
-    /* Soothing peaceminded theme */
-    --background: 220 25% 12%;
-    --foreground: 210 20% 96%;
+    /* Professional Light Theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 220 20% 16%;
-    --card-foreground: 210 20% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 220 20% 16%;
-    --popover-foreground: 210 20% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Soft lavender primary */
-    --primary: 260 45% 70%;
-    --primary-foreground: 220 25% 12%;
-    --primary-glow: 260 45% 80%;
+    /* Professional Blue Primary */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 221 83% 63%;
 
-    /* Gentle secondary */
-    --secondary: 220 20% 20%;
-    --secondary-foreground: 210 20% 96%;
+    /* Clean Secondary */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 220 15% 24%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Calming sage accent */
-    --accent: 150 30% 65%;
-    --accent-foreground: 220 25% 12%;
-    --accent-glow: 150 30% 75%;
+    /* Professional Teal Accent */
+    --accent: 173 80% 40%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 173 80% 50%;
 
-    --destructive: 0 60% 65%;
-    --destructive-foreground: 210 20% 96%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 22%;
-    --input: 220 20% 18%;
-    --ring: 260 45% 70%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Soothing gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(260 45% 70%), hsl(150 30% 65%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 12%), hsl(220 20% 16%));
-    --gradient-glow: linear-gradient(135deg, hsl(260 45% 70% / 0.15), hsl(150 30% 65% / 0.15));
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(173 80% 40%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-glow: linear-gradient(135deg, hsl(221 83% 53% / 0.1), hsl(173 80% 40% / 0.1));
 
-    /* Soft shadows */
-    --shadow-elegant: 0 20px 40px -12px hsl(260 45% 70% / 0.15);
-    --shadow-glow: 0 0 40px hsl(260 45% 70% / 0.2);
-    --shadow-accent: 0 0 30px hsl(150 30% 65% / 0.2);
+    /* Professional Shadows */
+    --shadow-elegant: 0 4px 20px -2px hsl(221 83% 53% / 0.08);
+    --shadow-glow: 0 0 30px hsl(221 83% 53% / 0.12);
+    --shadow-accent: 0 4px 16px hsl(173 80% 40% / 0.12);
 
-    /* Smooth animations */
+    /* Smooth Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
