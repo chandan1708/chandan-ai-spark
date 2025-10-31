@@ -6,53 +6,53 @@
 
 @layer base {
   :root {
-    /* Dark tech theme */
-    --background: 222 47% 4%;
-    --foreground: 210 40% 98%;
+    /* Soothing peaceminded theme */
+    --background: 220 25% 12%;
+    --foreground: 210 20% 96%;
 
-    --card: 222 47% 6%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 20% 16%;
+    --card-foreground: 210 20% 96%;
 
-    --popover: 222 47% 6%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 20% 16%;
+    --popover-foreground: 210 20% 96%;
 
-    /* Tech blue primary */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 4%;
-    --primary-glow: 217 91% 70%;
+    /* Soft lavender primary */
+    --primary: 260 45% 70%;
+    --primary-foreground: 220 25% 12%;
+    --primary-glow: 260 45% 80%;
 
-    /* Subtle secondary */
-    --secondary: 222 47% 8%;
-    --secondary-foreground: 210 40% 98%;
+    /* Gentle secondary */
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 210 20% 96%;
 
-    --muted: 222 47% 10%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 15% 24%;
+    --muted-foreground: 220 10% 60%;
 
-    /* Electric cyan accent */
-    --accent: 184 100% 50%;
-    --accent-foreground: 222 47% 4%;
-    --accent-glow: 184 100% 60%;
+    /* Calming sage accent */
+    --accent: 150 30% 65%;
+    --accent-foreground: 220 25% 12%;
+    --accent-glow: 150 30% 75%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 65%;
+    --destructive-foreground: 210 20% 96%;
 
-    --border: 222 47% 12%;
-    --input: 222 47% 8%;
-    --ring: 217 91% 60%;
+    --border: 220 20% 22%;
+    --input: 220 20% 18%;
+    --ring: 260 45% 70%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(184 100% 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(222 47% 4%), hsl(222 47% 6%));
-    --gradient-glow: linear-gradient(135deg, hsl(217 91% 60% / 0.2), hsl(184 100% 50% / 0.2));
+    /* Soothing gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(260 45% 70%), hsl(150 30% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 12%), hsl(220 20% 16%));
+    --gradient-glow: linear-gradient(135deg, hsl(260 45% 70% / 0.15), hsl(150 30% 65% / 0.15));
 
-    /* Shadows */
-    --shadow-elegant: 0 20px 40px -12px hsl(217 91% 60% / 0.2);
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
-    --shadow-accent: 0 0 30px hsl(184 100% 50% / 0.3);
+    /* Soft shadows */
+    --shadow-elegant: 0 20px 40px -12px hsl(260 45% 70% / 0.15);
+    --shadow-glow: 0 0 40px hsl(260 45% 70% / 0.2);
+    --shadow-accent: 0 0 30px hsl(150 30% 65% / 0.2);
 
-    /* Animations */
+    /* Smooth animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
