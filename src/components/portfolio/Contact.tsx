@@ -101,7 +101,7 @@ const Contact = () => {
                 <h4 className="font-medium mb-4">Connect with me</h4>
                 <div className="flex gap-4">
                   <a
-                    href="https://linkedin.com/in/chandan-r-7a8bb8237"
+                    href="https://www.linkedin.com/in/chandan-ramesh-7a8bb8237/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-secondary rounded-lg hover:bg-primary hover:shadow-glow transition-all duration-300 group"
@@ -110,7 +110,7 @@ const Contact = () => {
                   </a>
                   
                   <a
-                    href="https://github.com/chandan1708/chandan1708.github.io"
+                    href="https://github.com/chandan1708/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-secondary rounded-lg hover:bg-primary hover:shadow-glow transition-all duration-300 group"

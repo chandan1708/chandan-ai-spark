@@ -77,8 +77,8 @@ const Hero = () => {
             {/* Social Links - Enhanced with Professional Hover Effects */}
             <div className="flex justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap">
               {[
-                { href: "https://linkedin.com/in/chandan-r-7a8bb8237", icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5]" },
-                { href: "https://github.com/chandan1708/chandan1708.github.io", icon: Github, label: "GitHub", color: "hover:bg-[#333]" },
+                { href: "https://www.linkedin.com/in/chandan-ramesh-7a8bb8237/", icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5]" },
+                { href: "https://github.com/chandan1708/", icon: Github, label: "GitHub", color: "hover:bg-[#333]" },
                 { href: "https://medium.com/@chandan17.ramesh", label: "Medium", color: "hover:bg-[#00ab6c]" },
                 { href: "https://medial.app/user/chandan-ramesh-1d3eecebcf8a5", label: "Medial", color: "hover:bg-primary" },
                 { href: "mailto:chandan17.ramesh@gmail.com", icon: Mail, label: "Email", color: "hover:bg-accent" }
