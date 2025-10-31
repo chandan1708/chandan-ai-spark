@@ -8,7 +8,7 @@ const Experience = () => {
       title: "Gen AI Engineer",
       company: "WordWise Language Labs",
       location: "Bengaluru, Karnataka",
-      period: "May 2025 - Present",
+      period: "Sep 2024 - Present",
       type: "Current",
       achievements: [
         "Building a platform that connects consumer brands with emerging markets across India's heartland through authentic, impactful content created by acclaimed regional writers",
@@ -17,20 +17,6 @@ const Experience = () => {
         "Implemented scalable content generation pipelines for multi-regional deployment"
       ],
       skills: ["LangGraph", "mem0", "Okta", "Agentic AI tools", "LangSmith", "OpenRouter", "Needle", "Python"]
-    },
-    {
-      title: "Gen-AI Engineer Intern",
-      company: "WordWise Language Labs",
-      location: "Bengaluru, Karnataka",
-      period: "August 2024 - May 2025",
-      type: "Completed",
-      achievements: [
-        "Developed an inpainting model and hyperlocal language model, enhancing language processing capabilities by 30%",
-        "Streamlined workflows using advanced language modeling, improving collaboration by 25% and overall efficiency by 40%",
-        "Worked on image translation, retrieval-augmented generation (RAG), fine-tuning, sequence-to-sequence (S2S) models",
-        "Implemented automatic speech recognition (ASR) and text-to-speech (TTS) technologies"
-      ],
-      skills: ["Generative AI", "RAG", "NLP", "Image Translation", "ASR", "TTS", "Fine-tuning"]
     },
     {
       title: "Research and Development Intern",
